@@ -1,0 +1,54 @@
+@import "_foundation.scss";
+
+@include foundation-global-styles;
+// @include foundation-forms;
+// @include foundation-typography;
+@include foundation-flex-grid;
+@include foundation-menu;
+@include foundation-menu-icon;
+// @include foundation-accordion-menu;
+// @include foundation-drilldown-menu;
+// @include foundation-dropdown-menu;
+@include foundation-off-canvas;
+// @include foundation-reveal;
+// @include foundation-sticky;
+// @include foundation-title-bar;
+// @include foundation-top-bar;
+@include foundation-float-classes;
+@include foundation-visibility-classes;
+
+@import "typography.scss";
+@import "scss_variable.scss";
+
+.ba-container {
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ba-season__inner--btn{
+    margin: 50px 0;
+    padding: 10px;
+    border: 2px solid $primary-olive;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: transparent;
+    color: $primary-olive;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 27px;
+    max-width: 180px;
+
+    &:hover {
+      background: $olive-darker;
+    }
+
+    &--large{
+      max-width: 308px;
+    }
+}
